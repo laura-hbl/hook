@@ -11,8 +11,8 @@
 	<groupId>com.design</groupId>
 	<artifactId>hook</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hook</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Hook</name>
+	<description>Application for crochet pattern</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
