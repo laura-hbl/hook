@@ -13,8 +13,9 @@ public class ModelConverter {
         pattern.setTitle(patternDTO.getTitle());
         pattern.setDescription(patternDTO.getDescription());
         pattern.setLikes(patternDTO.getLikes());
-        pattern.setLevel(pattern.getLevel());
+        pattern.setLevel(patternDTO.getLevel());
         pattern.setImageUrl(patternDTO.getImageUrl());
+        pattern.setCreatedDate(patternDTO.getCreatedDate());
 
         return pattern;
     }

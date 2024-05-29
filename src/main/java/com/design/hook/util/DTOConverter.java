@@ -78,25 +78,5 @@ public class DTOConverter {
 
         return new RolePermissionDTO(rolePermission.getId(), rolePermission.getPermission());
     }
-
-
-    /**
-     * Formats a date to "yyyy-MM-dd HH:mm" pattern.
-     *
-     * @param date The date to format to "yyyy-MM-dd HH:mm" pattern
-     * @return The date formatted with "yyyy-MM-dd HH:mm" pattern.
-     */
-    public static Timestamp formatDate(final Timestamp date) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        String formattedTime = format.format(date);
-        java.util.Date parsedDate = null;
-        try {
-            parsedDate = format.parse(formattedTime);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        return new Timestamp(parsedDate.getTime());
-    }
 }
 
